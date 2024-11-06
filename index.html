@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title> About me page </title>
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="shortcut icon" href="pic.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <div class = "box">
+    <img class = "pro_pic" src = "pic.jpg" alt = "Profile pic"> 
+
+    <h3 class="name"> Babatunde Babafemi</h3>
+    <p><em><bold>22CJ031086</bold></em></p>
+    <p><em><bold>Python Developer</bold></em></p>
+
+    <span class="moreabout">
+      <p class="read">Read more:</p>
+      <em class="em"><a href="www.linkedin.com/in/bfemi" class="read-link" 
+        target="_blank">Linkedin</a></em>
+    </span>
+
+
+    <form class="details">
+      <input type="email" id="email" class="email" placeholder="Enter your email address here." required />
+      <textarea class="text" id="message" placeholder="Type your message here."></textarea>
+  </form>
+    <button onclick="sendEmail()">Contact Me</button>
+  </div>
+
+  <p id="success" class="success">Your message was sent successfully!</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="email.js" defer></script>
+</body>
+</html>
