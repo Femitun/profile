@@ -1,6 +1,9 @@
-"use strict mode";
-//Public Key
-emailjs.init("7pJzwqIbYoMqNt7Qz");
+"use strict";
+
+// Initialize EmailJS with your Public Key
+(function() {
+  emailjs.init("7pJzwqIbYoMqNt7Qz");
+})();
 
 // Function to send email
 function sendEmail() {
